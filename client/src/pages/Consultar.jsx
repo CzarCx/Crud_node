@@ -15,7 +15,7 @@ function Consultar() {
             const res = await axios.get(`http://localhost:3001/${id}`);
             const result = res.data;
             setTableData(result);
-            setEditedData(result); // Initialize edited data with server data
+            setEditedData(result); 
         } catch (err) {
             console.log(err);
         }
